@@ -2,7 +2,6 @@
   <section>
     <div class="container">
 
-
         <div v-for="product,index in productList" :key="index" class="card">
           <img :src="product.img" alt="digital comics">
           <div class="cardtext">{{product.text }}</div>

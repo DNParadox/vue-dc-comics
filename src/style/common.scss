@@ -15,9 +15,7 @@ li {
 body {
     font-family: 'Roboto', sans-serif;
     background-color: black;
-   
 }
-
 
 
 // COMMONS
@@ -28,9 +26,8 @@ body {
     justify-content: space-between;
     
 }
-
 a {
-    color: black;
+    color: white;
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -43,13 +40,12 @@ a {
 
   
     img {
-    width: 50px;
+    width: 40px;
     display: inline-block;
     }
     .cardtext {
-        padding-left: 1rem;
-        padding-right: 1rem;
-       
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 0.7rem;
     }
-
 }

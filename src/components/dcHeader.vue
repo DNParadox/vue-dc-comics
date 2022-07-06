@@ -106,7 +106,6 @@ header {
                 color: black;
                 text-decoration: none;
                 font-size: 1.2rem;
-           
                 &.current {
                     color: $brand_main_color;
                     // line-height: 100px;

@@ -1,20 +1,37 @@
 <template>
     <footer>
-        <div class="container">
-
+     <div class="footerTop">
+           <div class="container">
             <div class="container-ul">
                 <div v-for="(element, index) in liContent" :key="index" class="column">
                     <div class="column-title"> {{ element.title }} </div>
-                    <ul v-for="(message, index) in liContent[index].allText" :key="index" class="footerul">
-                        <li><a :href="element.url"> {{ message.text }} </a></li>
+                    <ul class="footerul">
+                        <li  v-for="(message, index) in liContent[index].allText" :key="index">
+                            <a :href="element.url"> {{ message.text }} </a>
+                        </li>
 
                     </ul>
                 </div>
-
-         
-            
             </div>
+
+           <div class="container-logo">
+                <img src="../assets/img/dc-logo-bg.png" alt="">
+           </div>
         </div>
+     </div>
+
+     <div class="footerBottom">
+        <div class="container">
+
+            <div class="button">
+                  <a href="#">SIGN UP NOW </a>
+            </div>
+
+        </div>
+     </div>
+
+        
+
     </footer>
 </template>
 
@@ -117,17 +134,16 @@ export default {
                     url: '#',
                     allText: [
                         {
-                            text: 'test',
+                            text: 'Shop DC',
                         },
                         {
-                            text: 'prova',
+                            text: 'Shop DC Collectible',
                         }
                     ],
                 },
 
             ]
         }
-
     }
 }
 
@@ -139,20 +155,47 @@ export default {
 
 footer {
     background-image: url(../assets/img/footer-bg.jpg);
-    height: 300px;
+    height: 380px;
     color: $brand_secondary_color;
-
     .container-ul {
         padding-top: 40px;
         display: flex;
-        justify-content: space-around;
-        width: 400px;
-
+        justify-content: space-between;
+        width: calc(100% / 3);
+        flex-wrap: wrap;
         .footerul {
             padding-top: 10px;
         }
+            a {
+                color: #7d8688;
+                font-size: 0.7rem;
+            }
+    }
+}
+
+.column-title{
+    color: $brand_secondary_color;
+}
+img {
+    width: 400px;
+}
+
+.footerTop {
+    height:100%;
+}
+.footerBottom {
+    background-color: #303030;
+    height: 100px;
+    .container {
+        height: 100%;
+    }
+    .button {
+        display: flex;
+        align-items: center;
+        height: 100%;
         a {
-            color: white
+            padding: 10px;
+            border: 1px solid #0282f9;
         }
     }
 }
