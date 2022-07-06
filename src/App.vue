@@ -2,20 +2,22 @@
   <div id="app">
     <dcHeader />
 
-   <main>
-     <sectionContent />
-     <sectionProduct />
-   </main>
-  
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
+     <main>
+      <sectionContent />
+      <sectionProduct />
+    </main>
+
+
+
+
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
 import dcHeader from './components/dcHeader.vue'
 import sectionContent from "./components/sectionContent.vue";
 import sectionProduct from "./components/sectionProduct.vue"
+import footer from 
 
 export default {
   name: 'App',
@@ -29,5 +31,6 @@ export default {
 
 <style lang="scss">
 @import './style/common';
+
 
 </style>
