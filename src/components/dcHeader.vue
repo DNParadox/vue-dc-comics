@@ -80,6 +80,7 @@ export default {
 <style  scoped lang="scss">
 @import '../style/variables.scss';
 header {
+    background-color: $brand_secondary_color;
     height: 100px;
     // Container modificato
     .container {
@@ -100,14 +101,14 @@ header {
         display: flex;
         justify-content: center;
         li {
-            padding: 10px;
+            padding-left: 10px;
             a {
                 color: black;
                 text-decoration: none;
                 font-size: 1.2rem;
            
                 &.current {
-                    color: $brand_main_color
+                    color: $brand_main_color;
                     // line-height: 100px;
                     // border-bottom: 10px red solid;          
                 }

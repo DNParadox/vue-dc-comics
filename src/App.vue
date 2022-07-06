@@ -9,7 +9,7 @@
 
 
 
-
+    <dcFooter />
   </div>
 </template>
 
@@ -17,7 +17,7 @@
 import dcHeader from './components/dcHeader.vue'
 import sectionContent from "./components/sectionContent.vue";
 import sectionProduct from "./components/sectionProduct.vue"
-import footer from 
+import dcFooter from "./components/dcFooter.vue"
 
 export default {
   name: 'App',
@@ -25,6 +25,7 @@ export default {
     dcHeader,
     sectionContent,
     sectionProduct,
+    dcFooter,
   }
 }
 </script>

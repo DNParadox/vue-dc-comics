@@ -14,8 +14,10 @@ li {
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: black;
    
 }
+
 
 
 // COMMONS
@@ -24,10 +26,30 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    
 }
 
 a {
     color: black;
     text-decoration: none;
     font-size: 1.2rem;
+}
+
+
+.card{
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+  
+    img {
+    width: 50px;
+    display: inline-block;
+    }
+    .cardtext {
+        padding-left: 1rem;
+        padding-right: 1rem;
+       
+    }
+
 }
