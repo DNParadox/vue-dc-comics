@@ -9,8 +9,8 @@
 
             <nav>
                 <ul class="menu">
-                    <li v-for="link, index in menuLinks" :key="index" :class="{ 'current': link.current }">
-                        <a :href="link.url">{{ link.text }}</a>
+                    <li v-for="link, index in menuLinks" :key="index" :class="{'current': link.current}" >
+                        <a :class="{'current': link.current}" :href="link.url">{{ link.text }}</a>
                     </li>
                 </ul>
             </nav>
@@ -77,8 +77,8 @@ export default {
   
 </script>
 
-<style lang="scss">
-
+<style  scoped lang="scss">
+@import '../style/variables.scss';
 header {
     height: 100px;
     // Container modificato
@@ -95,7 +95,6 @@ header {
             display: block;
         }
     }
-
  .menu {
         margin: 30px 0;
         display: flex;
@@ -106,13 +105,14 @@ header {
                 color: black;
                 text-decoration: none;
                 font-size: 1.2rem;
-            }
-            &.current {
-                background-color: red;
-            }
+           
+                &.current {
+                    color: $brand_main_color
+                    // line-height: 100px;
+                    // border-bottom: 10px red solid;          
+                }
+             }
         }
     }
 }
-
-
 </style>
