@@ -54,6 +54,7 @@ export default {
 
 section {
   background-color: $brand_main_color;
+  height: 150px;
 }
 
 .cardtext {

@@ -18,7 +18,7 @@ export default {
 
 section {
     display: flex;
-    height: 330px; 
+    height: 300px; 
     .jumbotron {
       color: white;
       width: 100%;

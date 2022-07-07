@@ -28,14 +28,12 @@ export default {
 
 <style scoped lang="scss">
 
-section {
-    height: 350px;
-}
 div {
     color: white;
 }
 
 .test{
+    padding-block: 1.5rem;
     display: flex;
     flex-wrap: wrap;
     

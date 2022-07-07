@@ -84,22 +84,23 @@ header {
     height: 100px;
     // Container modificato
     .container {
-    margin: 30px auto;
+        height: 100%;
 }
-   
-    // Logo
     .logo {
-        text-align: center;
+        height: 100%;
+        display: flex;
+        align-items: center;
         img {
             width: 80px;
-            height: 80px;
+            height: auto;
             display: block;
         }
     }
  .menu {
-        margin: 30px 0;
-        display: flex;
-        justify-content: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
         li {
             padding-left: 10px;
             a {
@@ -107,9 +108,7 @@ header {
                 text-decoration: none;
                 font-size: 1.2rem;
                 &.current {
-                    color: $brand_main_color;
-                    // line-height: 100px;
-                    // border-bottom: 10px red solid;          
+                    color: $brand_main_color;       
                 }
              }
         }
