@@ -1,24 +1,43 @@
 <template>
-  <section>
-      <div class="container">
-         <div class="content"> Qui verranno contenuti  </div>
+  <div class="container">
+    <div class="test">
+         <singleCardComponent v-for="(element,index) in products" :key="index" :cardDetails="element"/>
     </div>
-  </section>
+    
+  </div>
 </template>
 
 <script>
+import dcComicsJson from '../assets/dc-comics.json';
+import singleCardComponent from '../components/CardComponent.vue'
+
 export default {
     name: 'sectionContent',
+    components: 
+        {
+        singleCardComponent 
+        },
+
+    data() {
+        return {
+            products: dcComicsJson,
+        };
+    }
 }
 </script>
 
-<style>
-@import '../style/variables.scss';
+<style scoped lang="scss">
 
 section {
-    display: flex;
-    align-items: center;
-    height: 100px; 
+    height: 350px;
+}
+div {
+    color: white;
 }
 
+.test{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
 </style>

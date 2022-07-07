@@ -3,6 +3,7 @@
     <dcHeader />
 
      <main>
+      <dcJumbotron />
       <sectionContent />
       <sectionProduct />
     </main>
@@ -18,14 +19,17 @@ import dcHeader from './components/dcHeader.vue'
 import sectionContent from "./components/sectionContent.vue";
 import sectionProduct from "./components/sectionProduct.vue"
 import dcFooter from "./components/dcFooter.vue"
+import dcJumbotron from './components/dcJumbotron.vue';
 
 export default {
   name: 'App',
   components: {
     dcHeader,
+    dcJumbotron,
     sectionContent,
     sectionProduct,
     dcFooter,
+
   }
 }
 </script>

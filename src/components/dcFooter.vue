@@ -24,9 +24,16 @@
         <div class="container">
 
             <div class="button">
-                  <a href="#">SIGN UP NOW </a>
+                  <a href="#">SIGN-UP NOW </a>
             </div>
 
+            <div class="icon">
+              <span class="follow"> FOLLOW US</span>
+              <span class="icon" v-for="(icon, index) in footerspan" :key="index">
+                 <a href="#"> <img :src="icon.img" alt=""></a>
+                  </span>
+            
+            </div>
         </div>
      </div>
 
@@ -40,6 +47,7 @@ export default {
     name: 'dcFooter',
     data() {
         return {
+          
             liContent: [
                 {
                     title: 'DC COMICS',
@@ -141,10 +149,29 @@ export default {
                         }
                     ],
                 },
+            ],
+            footerspan: [
+                {
+                    img: require('../assets/img/footer-facebook.png')
+                },
+                {
+                    img: require('../assets/img/footer-twitter.png'),
+                },
+                {
+                    img: require('../assets/img/footer-youtube.png'),  
+                },
+                {
+                    img: require('../assets/img/footer-pinterest.png'),
+                },
+                {
+                    img: require('../assets/img/footer-periscope.png'),
+                },
 
-            ]
+            ],
         }
+        
     }
+    
 }
 
 
@@ -177,7 +204,7 @@ footer {
     color: $brand_secondary_color;
 }
 img {
-    width: 400px;
+    width: 380px;
 }
 
 .footerTop {
@@ -188,6 +215,8 @@ img {
     height: 100px;
     .container {
         height: 100%;
+        display: flex;
+        align-items: center;
     }
     .button {
         display: flex;
@@ -198,5 +227,19 @@ img {
             border: 1px solid #0282f9;
         }
     }
+    .icon {
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        color: $brand_main_color;
+    }
+    a {
+        img {
+            width: 45px;
+            padding-inline: 0.4rem;
+        }
+    }
 }
+
+
 </style>
